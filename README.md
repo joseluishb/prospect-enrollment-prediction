@@ -13,7 +13,7 @@
 - **Encoding:** cp1252, fechas parseadas
 - **Persistencia:** guardado en formato Parquet limpio
 
-## 4.3. Análisis exploratorio de datos (EDA) — Capítulo 4.1 ✓ completo
+## 4.3. Análisis exploratorio de datos (EDA) ✓ completo
 
 - **4.3.1 Descripción del dataset final:** resumen de columnas, tipos y tamaño final del dataset.
 - **4.3.2 Calidad de datos:** detección y conteo de `NaN`, "SIN DATO", y ceros encubiertos; plan de imputación/documentación.
@@ -24,7 +24,7 @@
 - **4.3.7 Duplicados y consistencia:** 13,473 registros eliminados; `FACULTAD` recuperada al 99.9% tras limpieza.
 - **Plan de variables:** 23 variables evaluadas para modelado (candidatas, transformaciones y codificaciones propuestas).
 
-## 4.4. Ingeniería de features — Capítulo 4.2 en curso
+## 4.4. Ingeniería de features — en curso
 
 - **4.4.1 Descarte de variables:** 9 columnas eliminadas (criterios: varianza baja, colinealidad, irrelevancia de negocio).
 - **4.4.2 Derivación desde fechas:** mes, semestre, `fue_valorado`, `dias_a_valoracion`.
@@ -32,14 +32,14 @@
 - **4.4.4 Encoding de variables categóricas:** one-hot encoding, label encoding según naturaleza de la variable.
 - **4.4.5 Dataset final para modelado:** ~16 features seleccionadas; matriz lista para train/test.
 
-## 4.5. Selección y entrenamiento de modelos — Capítulo 4.3 pendiente
+## 4.5. Selección y entrenamiento de modelos — pendiente
 
 - **Split train / validation / test:** estratificado por target para preservar desbalance.
 - **Baseline:** Regresión Logística (puntuación de referencia).
 - **Modelos candidatos:** Random Forest, XGBoost, LightGBM.
 - **Tratamiento del desbalance:** `class_weight`, SMOTE, threshold tuning.
 
-## 4.6. Evaluación y selección del modelo final — Capítulo 4.4 pendiente
+## 4.6. Evaluación y selección del modelo final — pendiente
 
 - **Comparación por F1-Score y PR-AUC:** métricas clave de evaluación.
 - **Curvas Precision-Recall y ROC:** visualización de performance.
@@ -47,7 +47,7 @@
 - **Optimización de umbral de decisión:** ajuste del threshold para maximizar F1 / PR-AUC.
 - **Matriz de confusión final:** TN, FP, FN, TP; análisis de errores.
 
-## 4.7. Interpretación y conclusiones — Capítulo 4.5 / 5 pendiente
+## 4.7. Interpretación y conclusiones — pendiente
 
 - **SHAP values:** explicabilidad local y global del modelo.
 - **Perfiles de riesgo de no matrícula:** segmentación y caracterización de estudiantes en riesgo.
