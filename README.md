@@ -1,4 +1,40 @@
-# 4. Capítulo 4: Resultado
+# Instrucciones para el seminario 2: Predicción de matrícula
+## Environment setup
+
+```bash
+# Crear y activar entorno virtual
+conda create -n seminario2 python=3.12 -y
+conda activate seminario2
+
+pip show ipykernel
+# WARNING: Package(s) not found: ipykernel
+pip install ipykernel
+
+python -m ipykernel install --user `
+--name=seminario2 `
+--display-name="Seminario2 (Python 3.12)"
+
+
+pip install pandas numpy scipy matplotlib seaborn plotly `
+    scikit-learn xgboost lightgbm catboost `
+    imbalanced-learn joblib tqdm `
+    jupyterlab ipykernel `
+    shap optuna `
+    openpyxl spacy
+
+pip install --upgrade pip setuptools wheel
+
+pip install pyarrow
+```
+
+o
+
+```bash
+pip install --upgrade pip setuptools wheel
+pip install -r requirements.txt
+```
+
+## 4. Capítulo 4: Resultado
 
 ## 4.1. Definición del problema ✓ completo
 
